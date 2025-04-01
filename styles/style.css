@@ -1,0 +1,219 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+
+.open-button {
+  background-color: #6f6f6f;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Modal styling */
+.modal {
+  /* Box Model */
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+
+  /* Typography */
+  font-family: "Arial", sans-serif;
+  color: #f0f0f0;
+
+  /* Visuals */
+  background-color: rgba(56, 51, 51, 0.9);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+  /* Flexbox */
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  /* Transitions/Animations */
+  animation: fadeIn 0.3s ease-in-out;
+}
+.modal p {
+  /* Box Model */
+  margin: 10px 0;
+
+  /* Typography */
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal p {
+  /* Box Model */
+  margin: 10px 0;
+
+  /* Typography */
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.modal-hidden {
+  display: none;
+}
+
+/* Close button styling */
+.close-button {
+  /* Box Model */
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+
+  /* Typography */
+  font-size: 16px;
+  color: white;
+
+  /* Visuals */
+  background-color: #ff4d4d;
+
+  /* Flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Transitions */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for close button */
+.close-button:hover {
+  /* Visuals */
+  background-color: #ff1a1a;
+}
+
+/* Agree button styling */
+.agr-button {
+  /* Box Model */
+  width: 100%;
+  padding: 12px 25px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 25px;
+
+  /* Typography */
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+  /* Visuals */
+  background-color: #4caf50;
+
+  /* Flexbox */
+  display: inline-block;
+
+  /* Transitions */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for agree button */
+.agr-button:hover {
+  /* Visuals */
+  background-color: #45a049;
+}
+
+/* Modal fade-in animation */
+@keyframes fadeIn {
+  from {
+    /* Transitions */
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    /* Transitions */
+    opacity: 1;
+    transform: scale(1);
+  }
+}
